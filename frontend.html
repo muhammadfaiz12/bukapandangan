@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="static/css/frontend.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<body>
+  <div class="icon-bar">
+    <a id='orang' class="active" href="#"><i class="glyphicon glyphicon-user"></i></a> 
+    <a id='surat' href="#"><i class="glyphicon glyphicon-envelope"></i></a>
+    <a id='bulat' href="#"><i class="fa fa-cog"></i></a>  
+    <a id='atas' href="#"><i class="fa fa-thumbs-up"></i></a>
+  </div>
+  <form>
+    <div id="profil">
+      <input type="text" placeholder="Nama Depan" name="namadepan" required>
+      <input type="text" placeholder="Nama Belakang" name="namabelakang" required>
+      <input type="text" placeholder="Nama Belakang" name="namaBelakang" required>
+      <select class="form-control" placeholder="Pilih Jenis Kelamin">
+        <option value="L">Laki-Laki</option>
+        <option value="P">Perempuan</option>
+      </select>
+      <input type="number" placeholder="Umur" name="umur" required>
+      <button type="button" onclick="lanjut('profil')">NEXT</button>
+    </div>
+    <div id="pesan">
+      <input id="email" class="form-control" type="text" placeholder="Email" name="email" required>
+      <input type="text" placeholder="Nomor Telepon" name="nomortelepon" required>
+      <button type="button" onclick="lanjut('pesan')">NEXT</button>
+    </div>
+    <div id="sandi">
+      <input type="password" placeholder="Kata Sandi" name="katasandi" required>
+      <input type="password" placeholder="Ulang Kata Sandi" name="ulangkatasandi" required>
+      <button type="button" onclick="lanjut('sandi')">NEXT</button>
+    </div>
+    <div id="selamat">
+      <i id="jempol" class="fa fa-thumbs-up"></i>
+      <h2 class="oren">Selamat!</h2>
+      <h4 class="biru">Anda Berhasil Terdaftar di TK Bermain Terus!</h4>
+    </div>
+  </form>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="static/js/frontend.js"></script>
+</body>
+</html> 
